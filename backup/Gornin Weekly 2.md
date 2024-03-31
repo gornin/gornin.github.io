@@ -18,6 +18,9 @@ ColorWell 是一款Mac上优秀的拾色器和调色板生成工具，简单易�
 github: https://github.com/meodai/color-names
 <img width="1440" alt="image" src="https://github.com/gornin/gornin.github.io/assets/39228659/12c2662d-b6f2-4d15-96fe-e79d998098ed">
 
+## [Final Cut Pro](https://xclient.info/s/final-cut-pro.html)
+Final Cut Pro 是 Mac OS X 平台上最好的视频剪辑软件，基于Cocoa编写，支持多路多核心处理器，支持GPU加速，支持后台渲染，可编辑从标清到4K的各种分辨率视频，ColorSync管理的色彩流水线则可保证全片色彩的一致性。
+
 
 # canvas
 
