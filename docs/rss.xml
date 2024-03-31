@@ -1,5 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Gornin</title><link>https://gornin.github.io</link><description>写作是生活，整理是习惯，分享是美德</description><copyright>Gornin</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/gornin/ImgStore/main/gornin.jpg</url><title>avatar</title><link>https://gornin.github.io</link></image><lastBuildDate>Sun, 24 Mar 2024 16:19:18 +0000</lastBuildDate><managingEditor>Gornin</managingEditor><ttl>60</ttl><webMaster>Gornin</webMaster><item><title>Gornin Weekly 1</title><link>https://gornin.github.io/post/Gornin%20Weekly%201.html</link><description># 2024.3.24&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Gornin</title><link>https://gornin.github.io</link><description>写作是生活，整理是习惯，分享是美德</description><copyright>Gornin</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/gornin/ImgStore/main/gornin.jpg</url><title>avatar</title><link>https://gornin.github.io</link></image><lastBuildDate>Sun, 31 Mar 2024 09:18:29 +0000</lastBuildDate><managingEditor>Gornin</managingEditor><ttl>60</ttl><webMaster>Gornin</webMaster><item><title>Gornin Weekly 2</title><link>https://gornin.github.io/post/Gornin%20Weekly%202.html</link><description># canvas&#13;
+&#13;
+## [lucky-canvas](https://100px.net/)&#13;
+Github：https://github.com/buuing/lucky-canvas&#13;
+&#13;
+基于 TS + Canvas 开发的【大转盘 / 九宫格 / 老虎机】抽奖插件， 一套源码适配多端框架 JS / Vue / React / Taro / UniApp / 微信小程序等， 奖品 / 文字 / 图片 / 颜色 / 按钮均可配置，支持同步 / 异步抽奖， 概率前 / 后端可控， 自动根据 dpr 调整清晰度适配移动端。</description><guid isPermaLink="true">https://gornin.github.io/post/Gornin%20Weekly%202.html</guid><pubDate>Sun, 31 Mar 2024 09:12:09 +0000</pubDate></item><item><title>Gornin Weekly 1</title><link>https://gornin.github.io/post/Gornin%20Weekly%201.html</link><description># 2024.3.24&#13;
 &#13;
 ## 事件&#13;
 &#13;
