@@ -1,3 +1,24 @@
+# tools
+
+## [LICEcap](https://www.cockos.com/licecap/)
+simple animated screen captures 
+
+LICEcap can capture an area of your desktop and save it directly to .GIF (for viewing in web browsers, etc) or .LCF (see below).
+
+## [Sip Pro 屏幕取色工具](https://xclient.info/s/sip.html)
+sip 是Mac os平台上的一款非常不错的Mac屏幕取色软件，你只需要鼠标点一下即可取得屏幕当前位置的颜色值，并将数据自动存到剪切板，方便随时粘贴出来。支持 CSS、UIColor 等多种格式。
+
+10.13.6 有版本不可用，日期越早的版本越靠谱。
+
+## [ColorWell](https://xclient.info/s/colorwell.html) 
+ColorWell 是一款Mac上优秀的拾色器和调色板生成工具，简单易用，具有多种类型的调色板，支持Hex/RGB/Float/HSL等，支持导入图片。
+
+## [color-names](https://meodai.github.io/color-names/)
+给颜色起名字
+github: https://github.com/meodai/color-names
+<img width="1440" alt="image" src="https://github.com/gornin/gornin.github.io/assets/39228659/12c2662d-b6f2-4d15-96fe-e79d998098ed">
+
+
 # canvas
 
 ## [lucky-canvas](https://100px.net/)
