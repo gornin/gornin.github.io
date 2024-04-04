@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="//cdn.staticfile.net/Primer/21.0.7/primer.css" rel="stylesheet" />
+    <link rel="icon" href="https://raw.githubusercontent.com/gornin/ImgStore/main/gornin.jpg"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="AI导航">
+<title>AI导航</title>
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">AI导航</h1>
+<div class="title-right">
+    
+    <a href="https://gornin.github.io"><button id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </button></a>
+
+    
+    <a href="https://github.com/gornin/gornin.github.io/issues/4" target="_blank"><button class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </button></a>
+    
+
+    <button class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </button>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><h2>AI常用网址</h2>
+<p><a href="https://chat.openai.com" rel="nofollow">ChatGPT</a></p>
+<p>OpenAI旗下AI对话工具</p>
+<p><a href="https://yiyan.baidu.com" rel="nofollow">文心一言</a></p>
+<p>百度推出的基于文心大模型的AI对话互动工具</p>
+<p><a href="https://www.bing.com" rel="nofollow">Bing新必应</a></p>
+<p>微软推出的新版结合了ChatGPT功能的必应</p>
+<p><a href="https://writesonic.com" rel="nofollow">Writesonic</a></p>
+<p>AI写作，文案，释义工具</p>
+<p><a href="https://midjourney.com" rel="nofollow">Midjourney</a></p>
+<p>AI图像和插画生成工具</p>
+<p><a href="https://www.photoroom.com/background-remover" rel="nofollow">PhotoRoom</a></p>
+<p>免费的AI图片背景移除和添加</p>
+<p><a href="https://www.jasper.ai" rel="nofollow">Jasper</a></p>
+<p>AI文字内容创作工具</p>
+<p><a href="https://yige.baidu.com" rel="nofollow">文心一格</a></p>
+<p>AI艺术和创意辅助平台</p>
+<p><a href="http://beta.dreamstudio.ai" rel="nofollow">Stable Diffusion</a></p>
+<p>Stability AI推出的文本到图像生成AI</p>
+<p><a href="https://www.copy.ai" rel="nofollow">Copy.ai</a></p>
+<p>人工智能营销文案和内容创作工具</p>
+<p><a href="https://www.bing.com/create" rel="nofollow">Bing Image Creator</a></p>
+<p>微软必应推出的基于DALL·E的AI图像生成工具</p>
+<p><a href="https://promptperfect.jina.ai/home" rel="nofollow">AI提示词优化工具</a></p>
+<p><a href="https://hihaibao.com" rel="nofollow">Hi海报</a></p>
+<p>嗨AI海报提供免费AI智能海报生成，只需输入一句话，即可快速生成各种节日海报、日签、邀请函、电商主图</p>
+<h2>AI编程工具</h2>
+<p><a href="https://www.cursor.so" rel="nofollow">Cursor</a></p>
+<p>使用GPT-4轻松重构、理解和编写代码。</p>
+<p><a href="https://codegeex.cn/zh-CN" rel="nofollow">CodeGeeX</a></p>
+<p>CodeGeeX - 免费的AI编程助手 - CodeGeeX</p>
+<p><a href="https://www.huaweicloud.com/lab/paas/codeartssnap.html" rel="nofollow">华为云CodeArts Snap编程</a></p>
+<p>华为云推出的国产化的AI代码辅助编程工具</p>
+<p><a href="https://www.programming-helper.com" rel="nofollow">Programming Helper</a></p>
+<p>AI代码生成器只需键入一个文本说明.AI会为你创建代码。帮助您完成各种任务的工具。</p>
+<p><a href="https://codegeex.cn/zh-CN" rel="nofollow">CodeGeex</a></p>
+<p>国内团队开发的免费AI编程助手</p>
+<p><a href="https://codesnippets.ai" rel="nofollow">CodeSnippets</a></p>
+<p>AI代码生成、补全、分析、重构和调试</p>
+<p><a href="https://www.askcodi.com" rel="nofollow">AskCodi</a></p>
+<p>你的个人AI编程助手</p>
+<p><a href="https://www.marsx.dev" rel="nofollow">MarsX</a></p>
+<p>AI无代码软件开发</p>
+<p><a href="https://www.codiga.io" rel="nofollow">Codiga</a></p>
+<p>AI代码实时分析</p>
+<p><a href="https://debuild.app" rel="nofollow">Debuild</a></p>
+<p>低代码快速开发网页应用</p>
+<p><a href="https://www.codeium.com" rel="nofollow">Codeium</a></p>
+<p>AI代码生成和补全</p>
+<p><a href="https://tongyi.aliyun.com/lingma" rel="nofollow">通义灵码</a></p>
+<p>阿里出品，基于通义大模型，提供代码智能生成、研发智能问答能力</p>
+<p><a href="https://www.tabnine.com" rel="nofollow">Tabnine</a></p>
+<p>AI代码自动补全编程助手</p>
+<p><a href="https://fronty.com" rel="nofollow">Fronty</a></p>
+<p>AI智能将图片转换成HTML和CSS代码</p>
+<p><a href="https://www.airops.com" rel="nofollow">AirOps</a></p>
+<p>AI SQL语句生成和修改</p>
+<p><a href="https://github.com/features/copilot">GitHub Copilot</a></p>
+<p>GitHub AI编程工具</p>
+<p><a href="https://ai-code-reviewer.com" rel="nofollow">AI Code Reviewer</a></p>
+<p>AI代码检查</p>
+<p><a href="https://mutable.ai" rel="nofollow">Mutable AI</a></p>
+<p>人工智能加速软件开发</p>
+<p><a href="https://www.locofy.ai" rel="nofollow">Locofy</a></p>
+<p>AI无代码工具将Figma、Adobe XD和Sketch设计转换成前端代码</p>
+<p><a href="https://fig.io" rel="nofollow">Fig</a></p>
+<p>下一代命令行工具（内置AI终端命令自动补全）</p>
+<p>[Ghostwriter](知名在线编程IDE Replit推出的AI编程助手)</p>
+<p><a href="https://replit.com/site/ghostwriter" rel="nofollow">https://replit.com/site/ghostwriter</a></p>
+<p><a href="https://aws.amazon.com/codewhisperer" rel="nofollow">CodeWhisperer</a></p>
+<p>亚马逊最新发布的免费AI编程助手</p>
+<p><a href="https://visualstudio.microsoft.com/zh-hans/services/intellicode" rel="nofollow">Visual Studio IntelliCode</a></p>
+<p>Visual Studio AI辅助开发</p>
+<p><a href="https://www.heycli.com" rel="nofollow">HeyCLI</a></p>
+<p>自然语言转义为CLI命令</p>
+<p><a href="https://httpie.io/ai" rel="nofollow">HTTPie AI</a></p>
+<p>AI API开发工具</p>
+<p><a href="https://www.warp.dev" rel="nofollow">Warp</a></p>
+<p>21世纪的终端工具（内置AI命令搜索）</p>
+<h2>AI指令提示</h2>
+<p><a href="https://github.com/benf2004/ChatGPT-Prompt-Genius">ChatGPT Prompt Genius</a></p>
+<p>免费开源的ChatGPT Prompt浏览器扩展</p>
+<p><a href="https://flowgpt.com" rel="nofollow">FlowGPT</a></p>
+<p>ChatGPT指令大全</p>
+<p><a href="https://prompt.noonshot.com" rel="nofollow">MJ Prompt Tool</a></p>
+<p>Midjourney Prompt帮助工具</p>
+<p><a href="https://prompts.chat" rel="nofollow">Awesome ChatGPT Prompts</a></p>
+<p>ChatGPT Prompts集合</p>
+<p><a href="https://generrated.com" rel="nofollow">Generrated</a></p>
+<p>超过7480个基于DALL·E 2的图片生成指令语句</p>
+<p><a href="https://www.clickprompt.org/zh-CN" rel="nofollow">ClickPrompt</a></p>
+<p>专为 Prompt 编写者设计的工具</p>
+<p><a href="https://promptbase.com" rel="nofollow">PromptBase</a></p>
+<p>AI Prompts集合市场</p>
+<p><a href="https://learningprompt.wiki" rel="nofollow">Learning Prompt</a></p>
+<p>免费的 Prompt Engineering 教程（中文开源）</p>
+<p><a href="https://replicate.com/pharmapsychotic/clip-interrogator" rel="nofollow">CLIP Interrogator</a></p>
+<p>反向学习！从图片反推AI关键词</p>
+<p><a href="https://promptvine.com" rel="nofollow">PromptVine</a></p>
+<p>ChatGPT Prompts和应用</p>
+<p><a href="https://publicprompts.art" rel="nofollow">PublicPrompts</a></p>
+<p>免费高质量的Prompts集合</p>
+<p><a href="https://prompthero.com" rel="nofollow">PromptHero</a></p>
+<p>发现Stable Diffusion、ChatGPT和Midjourney的提示用语</p>
+<p><a href="https://promptomania.com" rel="nofollow">PromptoMania</a></p>
+<p>MJ和SD提示词生成器</p>
+<p><a href="https://www.aiprm.com" rel="nofollow">AIPRM</a></p>
+<p>主要针对于SEO和SaaS文案写作的ChatGPT Prompts浏览器扩展</p>
+<p><a href="https://lib.kalos.art" rel="nofollow">LIB.KALOS.ART</a></p>
+<p>艺术风格流派参考库</p>
+<p><a href="https://tools.saxifrage.xyz/prompt" rel="nofollow">Visual Prompt Builder</a></p>
+<p>可视化AI提示语选择和搭建</p>
+<p><a href="https://www.prompthunt.com/explore" rel="nofollow">Prompt Hunt</a></p>
+<p>按主题分类的SD提示词</p>
+<p><a href="https://openart.ai/promptbook" rel="nofollow">Stable Diffusion Prompt Book</a></p>
+<p>OpenArt推出的针对Stable Diffusion指令的手册</p>
+<h2>AI训练模型</h2>
+<p><a href="https://openai.com/blog/openai-codex" rel="nofollow">Codex</a></p>
+<p>OpenAI旗下AI代码生成训练模型</p>
+<p><a href="https://www.baai.ac.cn/portal/article/index/cid/49/id/518.html" rel="nofollow">悟道</a></p>
+<p>智源“悟道”大模型，中国首个+世界最大人工智能大模型</p>
+<p><a href="https://imagen.research.google" rel="nofollow">Imagen</a></p>
+<p>Google AI文字到图像生成模型</p>
+<p><a href="https://www.openbmb.org/home" rel="nofollow">OpenBMB</a></p>
+<p>清华团队支持发起的大规模预训练语言模型库与相关工具</p>
+<p><a href="https://wenxin.baidu.com" rel="nofollow">文心大模型</a></p>
+<p>百度推出的产业级知识增强大模型</p>
+<p><a href="https://m6.aliyun.com" rel="nofollow">阿里巴巴M6</a></p>
+<p>阿里巴巴达摩院推出的超大规模中文预训练模型(M6)</p>
+<p><a href="https://github.com/Torantulino/Auto-GPT">Auto-GPT</a></p>
+<p>爆火的实现GPT-4完全自主的实验性开源项目，GitHub超8万星</p>
+<p><a href="https://segment-anything.com" rel="nofollow">Segment Anything（SAM）</a></p>
+<p>Meta最新推出的AI图像分割模型</p>
+<p><a href="https://research.runwayml.com/gen2" rel="nofollow">Gen-2</a></p>
+<p>Runway最新推出的AI视频生成模型</p>
+<p><a href="https://huggingface.co/docs/transformers/model_doc/bloom" rel="nofollow">BLOOM</a></p>
+<p>HuggingFace推出的大型语言模型（LLM）</p>
+<p><a href="https://replicate.com" rel="nofollow">Replicate</a></p>
+<p>在线运行开源机器学习模型</p>
+<p><a href="https://ai.googleblog.com/2022/04/pathways-language-model-palm-scaling-to.html" rel="nofollow">PaLM</a></p>
+<p>PaLM：Google推出的超过5400亿参数的大语言模型</p>
+<p><a href="https://www.lobe.ai" rel="nofollow">Lobe</a></p>
+<p>简单免费的机器学习模型训练工具</p>
+<p><a href="https://openai.com/product/dall-e-2" rel="nofollow">DALL·E 2</a></p>
+<p>OpenAI旗下DALL·E 2图像生成模型</p>
+<p><a href="https://www.evidentlyai.com" rel="nofollow">Evidently AI</a></p>
+<p>开源的机器学习模型监测和测试工具</p>
+<p><a href="https://www.deepspeed.ai" rel="nofollow">DeepSpeed</a></p>
+<p>微软开源的低成本实现类似ChatGPT的模型训练</p>
+<p><a href="https://www.modelscope.cn" rel="nofollow">魔搭社区</a></p>
+<p>阿里达摩院推出的AI模型社区，超过300+开源AI模型</p>
+<p><a href="https://scale.com" rel="nofollow">Scale AI</a></p>
+<p>AI机器学习标注训练平台</p>
+<p><a href="https://github.com/facebookresearch/llama">LLaMA</a></p>
+<p>Meta（Facebook）推出的AI大语言模型</p>
+<p><a href="https://agentgpt.reworkd.ai" rel="nofollow">AgentGPT</a></p>
+<p>在浏览器中组装、配置和部署自主人工智能的开源项目</p>
+<h2>AI开发工具</h2>
+<p><a href="https://platform.openai.com/account/api-keys" rel="nofollow">ChatGPT APIkey</a></p>
+<p>查看ChatGPT API Key</p>
+<p><a href="https://mxnet.apache.org" rel="nofollow">Apache MXNet</a></p>
+<p>免费开源的深度学习框架</p>
+<p><a href="https://docs.langchain.com/docs" rel="nofollow">LangChain</a></p>
+<p>开发由语言模型驱动的应用程序的框架</p>
+<p><a href="https://www.tensorflow.org" rel="nofollow">TensorFlow</a></p>
+<p>Google推出的机器学习和人工智能开源库</p>
+<p><a href="https://scikit-learn.org" rel="nofollow">Scikit-learn</a></p>
+<p>Python机器学习库</p>
+<p><a href="https://pytorch.org" rel="nofollow">PyTorch</a></p>
+<p>开源机器学习框架</p>
+<p><a href="https://www.paddlepaddle.org.cn" rel="nofollow">飞桨PaddlePaddle</a></p>
+<p>开源深度学习平台</p>
+<p><a href="https://keras.io" rel="nofollow">Keras</a></p>
+<p>Python版本的TensorFlow深度学习API</p>
+<p><a href="https://caffe.berkeleyvision.org" rel="nofollow">Caffe</a></p>
+<p>UC伯克利研究推出的深度学习框架</p>
+<h2>AI绘画工具</h2>
+<p><a href="https://www.wujieai.com" rel="nofollow">无界AI</a></p>
+<p>提供一站式AI搜索创作交流分享服务</p>
+<p><a href="https://www.midjourney.com" rel="nofollow">Midjourney</a></p>
+<p>目前最强的AI绘画工具</p>
+<p><a href="https://yige.baidu.com" rel="nofollow">文心一格</a></p>
+<p>百度出品的AI绘画工具</p>
+<p><a href="https://beta.dreamstudio.ai" rel="nofollow">DreamStudio</a></p>
+<p>SD兄弟产品！AI 图像生成器</p>
+<p><a href="https://firefly.adobe.com" rel="nofollow">Adobe Firefly</a></p>
+<p>Adobe最新推出的AI图像生成和编辑工具</p>
+<p><a href="https://creator.nightcafe.studio" rel="nofollow">NightCafe</a></p>
+<p>AI艺术插画在线生成</p>
+<p><a href="https://stability.ai" rel="nofollow">Stable Diffusion</a></p>
+<p>最强开源AI绘画工具</p>
+<p><a href="https://www.zcool.com.cn/ailab" rel="nofollow">站酷梦笔</a></p>
+<p>国内知名设计社区站酷推出的人工智能插画生成工具</p>
+<p><a href="https://scribblediffusion.com" rel="nofollow">Scribble Diffusion</a></p>
+<p>将草图转变为精美的插画</p>
+<p><a href="https://huggingface.co" rel="nofollow">HuggingFace</a></p>
+<p>下载开源的SD模型</p>
+<p><a href="https://www.artbreeder.com" rel="nofollow">Artbreeder</a></p>
+<p>创建令人惊叹的插画和艺术</p>
+<p><a href="https://dreamlike.art" rel="nofollow">Dreamlike.art</a></p>
+<p>效果惊人！内置5种模型的AI图像生成器</p>
+<p><a href="https://nijijourney.com/zh" rel="nofollow">NijiJourney</a></p>
+<p>MJ出品！面向二次元风格，内容细致拿捏专业到位</p>
+<p><a href="https://civitai.com" rel="nofollow">Civitai</a></p>
+<p>AI艺术共享平台！海量SD开源模型</p>
+<p><a href="https://www.dreamup.com" rel="nofollow">DreamUp</a></p>
+<p>DeviantArt推出的AI插画生成工具</p>
+<p><a href="https://lexica.art" rel="nofollow">Lexica</a></p>
+<p>基于StableDiffusion的在线插画生成</p>
+<p><a href="https://dreamina.jianying.com/ai-tool/platform" rel="nofollow">Dreamina</a></p>
+<p>Dreamina是字节跳动旗下的AI文生图产品</p>
+<h2>AI图像工具</h2>
+<p><a href="https://www.logosc.cn" rel="nofollow">标小智Logo生成</a></p>
+<p>人工智能AI生成Logo设计工具</p>
+<p><a href="https://magicstudio.com/zh" rel="nofollow">MagicStudio</a></p>
+<p>高颜值AI图像处理工具</p>
+<p><a href="https://stockimg.ai" rel="nofollow">Stockimg AI</a></p>
+<p>AI生成各种类型的图像和插画</p>
+<p><a href="https://www.photosir.com" rel="nofollow">悟空图像PhotoSir</a></p>
+<p>新一代专业图像处理软件，更智能、更高效、更好用</p>
+<p><a href="https://firefly.adobe.com" rel="nofollow">Adobe Firefly</a></p>
+<p>Adobe最新推出的AI图片生成工具</p>
+<p><a href="https://ribbet.ai" rel="nofollow">Ribbet.ai</a></p>
+<p>AI图片处理工具箱</p>
+<p><a href="https://booltool.boolv.tech/home" rel="nofollow">Booltool</a></p>
+<p>在线AI图像工具箱</p>
+<p><a href="https://facet.ai" rel="nofollow">Facet</a></p>
+<p>AI图片修图和优化工具</p>
+<p><a href="https://magicstudio.com/zh/imagine" rel="nofollow">Imagine</a></p>
+<p>AI文字到图片生成</p>
+<p><a href="https://www.canva.com/features/ai-image-generator" rel="nofollow">Canva AI图像生成</a></p>
+<p>在线设计工具Canva推出的AI图像生成工具</p>
+<p><a href="https://upscayl.github.io" rel="nofollow">Upscayl</a></p>
+<p>免费开源的AI图片无损放大工具</p>
+<p><a href="https://hotpot.ai" rel="nofollow">Hotpot.ai</a></p>
+<p>AI图片图像处理和生成工具</p>
+<p><a href="https://www.diffus.graviti.com" rel="nofollow">Graviti Diffus</a></p>
+<p>开箱即用的 Stable Diffusion WebUI 在线图像生成服务</p>
+<p><a href="https://picwish.com" rel="nofollow">PicWish</a></p>
+<p>AI图片编辑和背景移除</p>
+<p><a href="https://deepai.org" rel="nofollow">DeepAI</a></p>
+<p>在线AI图片生成和编辑</p>
+<p><a href="https://www.pixelcut.ai" rel="nofollow">Pixelcut.ai</a></p>
+<p>AI产品背景移除和替换</p>
+<p><a href="https://img.logosc.cn" rel="nofollow">AI改图神器</a></p>
+<p>AI万能图片在线编辑器</p>
+<p><a href="https://arc.tencent.com/zh/ai-demos" rel="nofollow">ARC</a></p>
+<p>腾讯旗下ARC实验室推出的AI图片处理工具</p>
+<p><a href="https://www.remove.bg/zh" rel="nofollow">remove.bg</a></p>
+<p>强大的AI背景移除工具</p>
+<p><a href="https://www.gaoding.com/ai" rel="nofollow">稿定AI</a></p>
+<p>拥有线稿上色优化、图片重绘、人物姿势检测、涂鸦完善等功能</p>
+<p><a href="https://clipdrop.co" rel="nofollow">ClipDrop</a></p>
+<p>Stability.ai推出的AI图片处理系列工具</p>
+<p><a href="https://www.diffus.graviti.com" rel="nofollow">Graviti Diffus</a></p>
+<p>开箱即用的 Stable Diffusion WebUI 在线图像生成服务</p>
+<p><a href="https://www.artssy.co" rel="nofollow">Artssy</a></p>
+<p>AI图像生成</p>
+<p><a href="https://www.cutout.pro/zh-CN/remove-video-background" rel="nofollow">Cutout.Pro</a></p>
+<p>AI一键视频背景移除</p>
+<p><a href="https://neural.love" rel="nofollow">Neural.love</a></p>
+<p>AI艺术图片生成</p>
+<p><a href="https://starryai.com" rel="nofollow">Starryai</a></p>
+<p>AI艺术图片生成</p>
+<p><a href="https://clipdrop.co/relight" rel="nofollow">Relight</a></p>
+<p>ClipDrop推出的AI图像打光工具</p>
+<p><a href="https://www.fotor.com/features/ai-image-generator" rel="nofollow">Fotor</a></p>
+<p>Fotor推出的在线AI图片生成工具</p>
+<h2>AI写作工具</h2>
+<p><a href="https://monica.im" rel="nofollow">Monica</a></p>
+<p>在任意网页使用GPT的魔法插件</p>
+<p><a href="https://wnr.ai" rel="nofollow">WNR.Ai</a></p>
+<p>内置GTP 4 的AI模板写作工具</p>
+<p><a href="">Rytr</a></p>
+<p>AI内容生成和写作助手</p>
+<p><a href="">火山写作</a></p>
+<p>字节跳动旗下团队推出的英语写作助手</p>
+<p><a href="https://www.aigaixie.com" rel="nofollow">爱改写</a></p>
+<p>AI写作和改写润色辅助工具</p>
+<p><a href="">NovelAI</a></p>
+<p>AI小说故事创作工具</p>
+<p><a href="https://texta.ai" rel="nofollow">Texta</a></p>
+<p>AI博客和文章一键生成</p>
+<p><a href="https://quillbot.com" rel="nofollow">QuillBot</a></p>
+<p>AI写作润色工具</p>
+<p><a href="https://aibang.run" rel="nofollow">AI帮个忙</a></p>
+<p>20个实用多功能AI小帮手</p>
+<p><a href="https://magickpen.com" rel="nofollow">MagicPen</a></p>
+<p>在线AI英语写作助手</p>
+<p><a href="https://zj.xfyun.cn/exam/text" rel="nofollow">讯飞智检</a></p>
+<p>讯飞推出的智能写作SaaS工具，支持智能写作后的校对与合规审核</p>
+<p><a href="https://effidit.qq.com" rel="nofollow">Effidit写作助手</a></p>
+<p>腾讯AI Lab开发的AI写作助手，轻松高效完成写作</p>
+<p><a href="https://www.sudowrite.com" rel="nofollow">Sudowrite</a></p>
+<p>AI故事写作工具，多种风格选择</p>
+<p><a href="https://writesonic.com" rel="nofollow">Writesonic</a></p>
+<p>写作+搜索+绘画三位一体</p>
+<p><a href="https://aiwrite.wps.cn" rel="nofollow">WPS智能写作</a></p>
+<p>WPS旗下在线智能写作工具</p>
+<p><a href="https://www.wordtune.com" rel="nofollow">WordTune</a></p>
+<p>你的个人写作助手和编辑</p>
+<p><a href="https://xiezuocat.com" rel="nofollow">秘塔写作猫</a></p>
+<p>AI写作，文章自成</p>
+<p><a href="https://getgetai.com/home?" rel="nofollow">字语智能</a></p>
+<p>全网热点追踪！一站式AI智能写作服务平台</p>
+<p><a href="https://www.notion.so/product/ai" rel="nofollow">Notion AI</a></p>
+<p>Notion旗下的AI内容创作助手</p>
+<p><a href="https://reword.co" rel="nofollow">Reword</a></p>
+<p>AI文章写作</p>
+<p><a href="https://www.peppertype.ai" rel="nofollow">Peppertype.ai</a></p>
+<p>高质量AI内容生成</p>
+<p><a href="https://www.compose.ai" rel="nofollow">Compose AI</a></p>
+<p>免费的Chrome浏览器自动化写作扩展</p>
+<p><a href="https://contentbot.ai" rel="nofollow">ContentBot</a></p>
+<p>AI快速写作工具</p>
+<p><a href="https://zh.hypotenuse.ai" rel="nofollow">Hypotenuse AI</a></p>
+<p>人工智能写作助手和文本生成器</p>
+<p><a href="https://www.yizhuan5.com" rel="nofollow">易撰</a></p>
+<p>新媒体AI内容创作助手</p>
+<p><a href="https://wantquotes.net" rel="nofollow">据意查句</a></p>
+<p>清华出品！AI 神器让你的文案立马变高级</p>
+<p><a href="https://chuangyi.taobao.com/pages/aiCopy" rel="nofollow">悉语</a></p>
+<p>阿里旗下智能文案工具，一键生成电商营销文案</p>
+<p><a href="https://www.canva.com/magic-write" rel="nofollow">Magic Write</a></p>
+<p>Canva旗下AI文案生成器</p>
+<p><a href="https://www.grammarly.com" rel="nofollow">Grammarly</a></p>
+<p>AI英语语法和拼写检查写作助手</p>
+<p><a href="https://cowriter.org" rel="nofollow">Co Writer</a></p>
+<p>CoWriter是一个AI驱动的工具，用于优化您的营销内容</p>
+<p><a href="https://www.copy.ai" rel="nofollow">Copy.ai</a></p>
+<p>AI社交营销文案写作助手</p>
+<p><a href="https://paragraphai.com" rel="nofollow">ParagraphAI</a></p>
+<p>基于ChatGPT的AI写作应用</p>
+<p><a href="https://www.closerscopy.co" rel="nofollow">ClosersCopy</a></p>
+<p>AI文案写作机器人</p>
+<p><a href="https://bearly.ai" rel="nofollow">Bearly</a></p>
+<p>AI阅读总结、写作和内容生成助手</p>
+<p><a href="https://copysmith.ai" rel="nofollow">Copysmith</a></p>
+<p>企业级和电商文案生成</p>
+<p><a href="https://aiapp.cc" rel="nofollow">创作王</a></p>
+<p>AI一键帮助你创作营销内容</p>
+<p><a href="https://www.heyfriday.cn/home" rel="nofollow">HeyFriday</a></p>
+<p>国内团队推出的智能AI写作工具</p>
+<p><a href="https://hyperwriteai.com" rel="nofollow">HyperWrite</a></p>
+<p>AI写作助手帮助你创作内容更自信</p>
+<p><a href="https://www.gomoonbeam.com" rel="nofollow">Moonbeam</a></p>
+<p>长文章AI内容创作助手</p>
+<p><a href="https://www.deepl.com/write" rel="nofollow">DeepL Write</a></p>
+<p>DeepL推出的AI驱动的写作助手</p>
+<p><a href="https://copyai.cn" rel="nofollow">快文CopyDone</a></p>
+<p>AIGC原创内容创作和营销文案生成</p>
+<p><a href="https://effidit.qq.com" rel="nofollow">Effidit</a></p>
+<p>腾讯AI Lab开发的智能创作助手</p>
+<p><a href="https://anyword.com" rel="nofollow">Anyword</a></p>
+<p>AI文案写作助手和文本生成器</p>
+<p><a href="https://www.typeface.ai" rel="nofollow">Typeface</a></p>
+<p>AI创意内容创作助手</p>
+<p><a href="https://jenni.ai" rel="nofollow">jenni</a></p>
+<p>面向作家的AI协作助手</p>
+<p><a href="https://www.5118.com/ai/articlegenius" rel="nofollow">5118 SEO优化精灵</a></p>
+<p>一键式生成高质量SEO文章，提高搜索引擎排名获得更多流量</p>
+<p><a href="https://vgoapp.com" rel="nofollow">字符狂飙</a></p>
+<p>全方位AI文档生成工具，快速生成专业文档</p>
+<p><a href="https://if.caiyunai.com" rel="nofollow">彩云小梦</a></p>
+<p>彩云科技推出的智能AI故事写作工具</p>
+<p><a href="https://spell.tools" rel="nofollow">Spell.tools</a></p>
+<p>高颜值AI内容营销创作工具</p>
+<p><a href="https://www.giiso.com" rel="nofollow">智搜</a></p>
+<p>Giiso写作机器人，内容创作AI辅助工具</p>
+<p><a href="https://ia.net/presenter" rel="nofollow">iA / Presenter</a></p>
+<p>使用 Markdown 制作ppt</p>
+<h2>AI办公工具</h2>
+<p><a href="https://shutu.cn" rel="nofollow">TreeMind树图</a></p>
+<p>TreeMind树图新一代思维导图，便捷的在线思维导图制作软件，专业的思维导图工具，提供大量免费思维导图模板，轻松制作脑图、树形图、鱼骨图、组织架构图、时间轴、时间线等结构思维导图，助力高效梳理思维，激发灵感。</p>
+<p><a href="http://chatppt.yoo-ai.com?share_code=633967" rel="nofollow">ChatPPT</a></p>
+<p>参照你的语义对话生成完整的PPT文档，指令支持个性化生成与编辑诉求</p>
+<p><a href="https://zb.moyunav.com/zh" rel="nofollow">周报生成器</a></p>
+<p>AI帮你优化周报，打工人必备</p>
+<p><a href="https://chatdoc.com" rel="nofollow">ChatDOC：智能文档阅读助手</a></p>
+<p>ChatDOC的优势在于，精准识别和解析PDF中的表格和段落，让AI回答都可以溯源至文档内容。后续还会支持图片、扫描件格式，以及多个文档交叉问答。点击即可免费使用。</p>
+<p><a href="https://www.airecruitas.com" rel="nofollow">AI得贤招聘官</a></p>
+<p>替代人类面试官对候选人的核心价值观，通用素质，潜在领导力和专业素质进行基于视频面试的判断。</p>
+<p><a href="https://chatexcel.com" rel="nofollow">ChatExcel</a></p>
+<p>首款用于 Excel 的自动 AI 工具。</p>
+<p><a href="https://sheetplus.ai" rel="nofollow">Sheet+</a></p>
+<p>Excel和GoogleSheets表格AI处理工具</p>
+<p><a href="https://ai.baidu.com/creativity/main/workbench" rel="nofollow">百度AI创作工具箱</a></p>
+<p>百度大脑智能创作平台</p>
+<p><a href="https://meeting.iflyrec.com" rel="nofollow">讯飞听见</a></p>
+<p>科大讯飞推出的AI智能会议系统，实时字幕、实时翻译、自动生成会议记录</p>
+<p><a href="https://www.taskade.com" rel="nofollow">Taskade</a></p>
+<p>高颜值AI大纲和思维导图生成</p>
+<p><a href="https://www.feishu.cn/product/minutes" rel="nofollow">飞书妙记</a></p>
+<p>飞书智能会议纪要和快捷语音识别转文字</p>
+<p><a href="https://rossum.ai" rel="nofollow">Rossum.ai</a></p>
+<p>现代化的AI文档处理工具</p>
+<p><a href="https://whimsical.com/ai-mind-maps" rel="nofollow">Whimsical</a></p>
+<p>Whimsical推出的AI思维导图工具</p>
+<p><a href="https://www.pandagpt.io" rel="nofollow">PandaGPT</a></p>
+<p>上传文档！即可用对话的方式让 AI 总结文档重点</p>
+<p><a href="https://www.formx.ai" rel="nofollow">FormX.ai</a></p>
+<p>AI自动从表格和文档中提取数据</p>
+<p><a href="https://fireflies.ai" rel="nofollow">Fireflies.ai</a></p>
+<p>AI会议转录和会议纪要生成工具</p>
+<p><a href="https://excelformulabot.com" rel="nofollow">ExcelFormulaBot</a></p>
+<p>AI将指令转换成Excel的函数公式</p>
+<p><a href="https://wordai.com" rel="nofollow">WordAi</a></p>
+<p>10倍速AI内容输出！创建读者喜爱的优质内容</p>
+<p><a href="https://design.meitu.com/ppt" rel="nofollow">NEW美图AI PPT</a></p>
+<p>美图秀秀推出的免费在线AI生成PPT设计工具</p>
+<p><a href="https://chat-ppt.com" rel="nofollow">ChatPPT</a></p>
+<p>必优科技推出的国内首个中文AI生成PPT的办公产品</p>
+<p><a href="https://chroniclehq.com" rel="nofollow">Chronicle</a></p>
+<p>AI高颜值演示文稿创建</p>
+<p><a href="AI%E5%88%9B%E5%BB%BA%E7%B2%BE%E7%BE%8E%E7%9A%84%E6%BC%94%E7%A4%BA%E7%A8%BF">Powerpresent AI</a></p>
+<p>AI创建精美的演示稿</p>
+<p><a href="https://www.slidesai.io" rel="nofollow">SlidesAI</a></p>
+<p>AI快速创建演示幻灯片</p>
+<p><a href="https://www.chatba.com" rel="nofollow">ChatBA</a></p>
+<p>AI幻灯片生成工具</p>
+<p><a href="https://www.decktopus.com" rel="nofollow">Decktopus AI</a></p>
+<p>高质量AI演示文稿生成工具</p>
+<p><a href="https://www.presentations.ai" rel="nofollow">Presentations.AI</a></p>
+<p>演示文档版的ChatGPT</p>
+<p><a href="https://gamma.app" rel="nofollow">Gamma App</a></p>
+<p>AI幻灯片演示生成工具</p>
+<p><a href="https://www.auxi.ai" rel="nofollow">auxi</a></p>
+<p>功能强大的PowerPoint AI插件</p>
+<p><a href="https://www.beautiful.ai" rel="nofollow">beautiful.ai</a></p>
+<p>AI创建展示幻灯片</p>
+<p><a href="https://gezhe.caixuan.cc" rel="nofollow">歌者AI</a></p>
+<p>彩漩PPT推出的AI PPT生成工具</p>
+<p><a href="https://www.mindshow.fun" rel="nofollow">MindShow</a></p>
+<p>国内独立开发者开发的输入内容自动生成演示工具</p>
+<p><a href="https://tome.app" rel="nofollow">Tome</a></p>
+<p>AI创作叙事性幻灯片</p>
+<p><a href="https://kimi.moonshot.cn" rel="nofollow">AI整理文档总结</a></p>
+<p>上传PDF等文档，让AI帮忙整理总结输出</p>
+<h2>AI学习网站</h2>
+<p><a href="https://aistudio.baidu.com" rel="nofollow">飞桨AI Studio</a></p>
+<p>人工智能学习实训社区</p>
+<p><a href="https://brilliant.org/courses/intro-neural-networks" rel="nofollow">神经网络入门</a></p>
+<p>Brilliant推出的Introduction to Neural Networks课程</p>
+<p><a href="https://www.showmeai.tech" rel="nofollow">ShowMeAI知识社区</a></p>
+<p>人工智能领域的资料库和学习社区</p>
+<p><a href="https://machinelearningmastery.com/start-here" rel="nofollow">MachineLearningMastery</a></p>
+<p>免费在线学习机器学习，从基础到高级</p>
+<p><a href="https://www.deeplearning.ai" rel="nofollow">DeepLearning.AI</a></p>
+<p>深度学习和人工智能学习平台</p>
+<p><a href="https://ai.google" rel="nofollow">Google AI</a></p>
+<p>Google AI学习平台</p>
+<p><a href="https://developer.aliyun.com/learning/roadmap/ai" rel="nofollow">阿里云AI学习路线</a></p>
+<p>阿里云推出的人工智能学习路线（学+测）</p>
+<p><a href="https://www.coursera.org/collections/best-machine-learning-ai" rel="nofollow">Coursera</a></p>
+<p>知名MOOC平台，众多人工智能和机器学习课程</p>
+<p><a href="https://www.fast.ai" rel="nofollow">fast.ai</a></p>
+<p>免费开源的深度学习和AI学习网站，让每个人都参与到AI！</p>
+<p><a href="https://www.kaggle.com" rel="nofollow">Kaggle</a></p>
+<p>机器学习和数据科学社区</p>
+<p><a href="https://www.elementsofai.com" rel="nofollow">Elements of AI</a></p>
+<p>免费在线AI通识学习</p>
+<p><a href="https://zh.d2l.ai" rel="nofollow">动手学深度学习</a></p>
+<p>动手学深度学习的教材和课程</p>
+<p><a href="https://microsoft.github.io/ML-For-Beginners" rel="nofollow">ML for Beginners</a></p>
+<p>微软推出的免费开源的机器学习课程，GitHub标星4万+</p>
+<p><a href="https://www.udacity.com/school/school-of-ai" rel="nofollow">Udacity AI学院</a></p>
+<p>Udacity推出的School of AI，从入门到高级</p>
+<p><a href="https://www.aidaxue.com" rel="nofollow">AI大学堂</a></p>
+<p>科大讯飞推出的AI大学堂，学习AI、走进未来</p>
+<h2>AI设计工具</h2>
+<p><a href="https://www.ponzu.gg" rel="nofollow">Ponzu</a></p>
+<p>AI生成3D无缝贴图纹理</p>
+<p><a href="https://cascadeur.com" rel="nofollow">Cascadeur</a></p>
+<p>AI辅助制作3D关键帧动画</p>
+<p><a href="https://dreamfusion3d.github.io" rel="nofollow">DreamFusion</a></p>
+<p>谷歌推出的文本转3D模型</p>
+<p><a href="https://www.plasmo.ai" rel="nofollow">Plasmo</a></p>
+<p>将草图转为3D模型</p>
+<p><a href="https://palette.tone-row.com" rel="nofollow">Palette</a></p>
+<p>生成整套UI调色板</p>
+<p><a href="https://www.obviously.ai" rel="nofollow">ColorMagic</a></p>
+<p>AI调色板生成工具</p>
+<p><a href="https://uizard.io" rel="nofollow">Uizard</a></p>
+<p>AI网页、App和UI设计</p>
+<p><a href="https://www.iconifyai.com" rel="nofollow">IconifyAI</a></p>
+<p>AI App图标生成器</p>
+<p><a href="https://logomaster.ai" rel="nofollow">Logomaster.ai</a></p>
+<p>AI Logo生成工具</p>
+<p><a href="https://diagram.com" rel="nofollow">Digram</a></p>
+<p>让Figma更好用的AI神器</p>
+<p><a href="https://www.usegalileo.ai" rel="nofollow">Galileo AI</a></p>
+<p>AI高保真原型设计</p>
+<p><a href="https://js.design/ai-upcoming" rel="nofollow">即时AI</a></p>
+<p>即时设计推出的由文本描述生成可编辑的原型设计稿</p>
+<p><a href="https://huemint.com" rel="nofollow">Huemint</a></p>
+<p>AI调色生成工具</p>
+<p><a href="https://designs.ai" rel="nofollow">Designs.ai</a></p>
+<p>AI设计工具</p>
+<p><a href="https://looka.com" rel="nofollow">Looka</a></p>
+<p>AI在线设计和生成logo</p>
+<p><a href="https://www.usesuperflow.com" rel="nofollow">Superflow</a></p>
+<p>AI辅助高效网站协作设计</p>
+<p><a href="https://brandmark.io/color-wheel" rel="nofollow">Color Wheel</a></p>
+<p>AI灰度logo或插画上色工具</p>
+<p><a href="https://www.noya.io" rel="nofollow">Noya</a></p>
+<p>让线框图变成高保真设计</p>
+<p><a href="https://illustroke.com" rel="nofollow">Illustroke</a></p>
+<p>AI SVG矢量插画生成工具</p>
+<p><a href="https://designer.microsoft.com" rel="nofollow">Microsoft Designer</a></p>
+<p>微软推出的在线设计海报和宣传图工具</p>
+<p><a href="https://withpoly.com/browse/textures" rel="nofollow">Poly</a></p>
+<p>AI生成3D材质</p>
+<p><a href="https://www.canva.com/magic-design" rel="nofollow">Magic Design</a></p>
+<p>在线设计工具Canva推出的AI设计工具</p>
+<p><a href="https://lumalabs.ai" rel="nofollow">Luma AI</a></p>
+<p>AI 3D捕捉、建模和渲染</p>
+<p><a href="https://appicons.ai" rel="nofollow">Appicons AI</a></p>
+<p>AI生成精美App图标</p>
+<p><a href="https://magician.design" rel="nofollow">Magician</a></p>
+<p>Figma插件，AI生成图标、图片和UX文案</p>
+<p><a href="https://skybox.blockadelabs.com" rel="nofollow">Text to Skybox</a></p>
+<p>推荐！AI生成360°无缝环境贴图</p>
+<p><a href="https://www.khroma.co" rel="nofollow">Khroma</a></p>
+<p>AI调色盘生成工具</p>
+<p><a href="https://colors.eva.design" rel="nofollow">Eva Design System</a></p>
+<p>基于深度学习的色彩生成工具</p>
+<p><a href="https://www.logoai.com" rel="nofollow">Logoai</a></p>
+<p>利用AI来设计你喜欢的Logo和品牌</p>
+<p><a href="https://www.illostration.com" rel="nofollow">illostrationAI</a></p>
+<p>AI插画生成，low poly、3D、矢量、logo、像素风、皮克斯等风格</p>
+<p><a href="https://spline.design/ai" rel="nofollow">Spline AI</a></p>
+<p>Spline推出的AI生成3D物体、动画、材质</p>
+<h2>AI内容检测</h2>
+<p><a href="https://checkforai.com" rel="nofollow">CheckforAI</a></p>
+<p>免费在线检测AI内容</p>
+<p><a href="https://x.writefull.com/gpt-detector" rel="nofollow">GPT Detector</a></p>
+<p>在线检查文本是否由GPT-3或ChatGPT生成</p>
+<p><a href="https://smodin.io/ai-content-detector" rel="nofollow">Smodin AI Content Detector</a></p>
+<p>多语种AI内容检测工具</p>
+<p><a href="https://www.writecream.com/ai-content-detector" rel="nofollow">Writecream AI Content Detector</a></p>
+<p>Writecream推出的AI内容检测工具</p>
+<p><a href="https://sapling.ai/utilities/ai-content-detector" rel="nofollow">Sapling AI Content Detector</a></p>
+<p>Sapling.ai推出的免费在线AI内容检测工具</p>
+<p><a href="https://copyleaks.com" rel="nofollow">CopyLeaks</a></p>
+<p>AI内容检测和分级</p>
+<p><a href="https://writer.com/ai-content-detector" rel="nofollow">AI Content Detector</a></p>
+<p>Writer推出的AI内容检测工具</p>
+<p><a href="https://studycorgi.com/free-writing-tools/chat-gpt-detector" rel="nofollow">StudyCorgi ChatGPT Detector</a></p>
+<p>StudyCorgi推出的帮助学生检测ChatGPT的工具</p>
+<p><a href="https://aiseo.ai/tools/ai-content-detector.html" rel="nofollow">AISEO AI Content Detector</a></p>
+<p>AISEO推出的AI内容检测器</p>
+<p><a href="https://gptzero.me" rel="nofollow">GPTZero</a></p>
+<p>超过百万人都在用的免费AI内容检测工具</p>
+<p><a href="https://gowinston.ai" rel="nofollow">Winston AI</a></p>
+<p>强大的AI内容检测解决方案</p>
+<p><a href="https://originality.ai" rel="nofollow">Originality.AI</a></p>
+<p>原创度和AI内容检测</p>
+<h2>AI对话聊天</h2>
+<p><a href="https://openai.com/blog/chatgpt-plugins" rel="nofollow">ChatGPT plugins</a></p>
+<p>ChatGPT引入plugins: AI的App store时刻到来</p>
+<p><a href="https://bard.google.com" rel="nofollow">Google Bard</a></p>
+<p>Google推出的AI聊天对话机器人Bard</p>
+<p><a href="https://tongyi.aliyun.com" rel="nofollow">通义千问</a></p>
+<p>阿里巴巴最新推出的类ChatGPT响应人类指令的大模型</p>
+<p><a href="https://whispr.chat" rel="nofollow">Whispr</a></p>
+<p>免费AI对话回应</p>
+<p><a href="https://www.anthropic.com/earlyaccess" rel="nofollow">Claude</a></p>
+<p>ChatGPT的最为有力的竞争对手之一</p>
+<p><a href="https://writesonic.com/chat" rel="nofollow">ChatSonic</a></p>
+<p>WriteSonic出品的ChatGPT竞品</p>
+<p><a href="https://you.com/chat" rel="nofollow">YouChat</a></p>
+<p>AI搜索对话工具</p>
+<p><a href="https://open-assistant.io/zh" rel="nofollow">Open Assistant</a></p>
+<p>Open Assistant</p>
+<p><a href="https://chat.sensetime.com/wb" rel="nofollow">商量SenseChat</a></p>
+<p>商汤科技推出的类ChatGPT的人工智能大语言模型</p>
+<p><a href="https://character.ai" rel="nofollow">Character.AI</a></p>
+<p>创建虚拟角色并与其对话</p>
+<p><a href="https://chat.colossalai.org" rel="nofollow">ColossalChat</a></p>
+<p>Colossal-AI推出的免费开源版ChatGPT聊天机器人替代品</p>
+<p><a href="https://replika.com" rel="nofollow">Replika</a></p>
+<p>AI对话陪伴工具</p>
+<p><a href="https://www.jasper.ai/chat" rel="nofollow">Jasper Chat</a></p>
+<p>Jasper针对内容创作者出品的AI聊天工具</p>
+<p><a href="https://poe.com" rel="nofollow">Poe</a></p>
+<p>问答社区Quora推出的问答机器人工具</p>
+<p><a href="https://www.inworld.ai" rel="nofollow">Inworld</a></p>
+<p>开发和创建AI虚拟角色并与其互动</p>
+<p><a href="https://dify.ai/zh" rel="nofollow">dify.ai</a></p>
+<p>生成式 AI 应用创新引擎  新一代大型语言模型应用开发平台，轻松构建和运营生成式 AI 原生应用。基于任意大型语言模型构建企业级  Assistants API 和 GPTs。</p>
+<p><a href="https://www.so.com/zt/invite.html" rel="nofollow">360智脑</a></p>
+<p>360搜索最新推出的AI对话聊天机器人</p>
+<h2>AI视频工具</h2>
+<p><a href="https://www.synthesia.io" rel="nofollow">Synthesia</a></p>
+<p>AI视频生成平台</p>
+<p><a href="https://zenvideo.qq.com" rel="nofollow">腾讯智影</a></p>
+<p>腾讯推出的在线智能视频创作平台</p>
+<p><a href="https://b.jimmylv.cn" rel="nofollow">BibiGPT</a></p>
+<p>一键总结B站音视频内容</p>
+<p><a href="https://www.app.artflow.ai" rel="nofollow">Artflow</a></p>
+<p>AI创建生成视频动画</p>
+<p><a href="https://hourone.ai" rel="nofollow">Hour One</a></p>
+<p>人工智能文字到视频生成</p>
+<p><a href="https://neurodub.ai" rel="nofollow">Neurodub</a></p>
+<p>端到端的AI视频语音本地化工具</p>
+<p><a href="https://runwayml.com/green-screen" rel="nofollow">Runway</a></p>
+<p>强大的AI视频制作工具，绿幕抠像、视频生成等</p>
+<p><a href="https://www.kaiber.ai" rel="nofollow">Kaiber</a></p>
+<p>图片文字转视频的AI引擎</p>
+<p><a href="https://www.unscreen.com" rel="nofollow">Unscreen</a></p>
+<p>AI智能视频背景移除工具</p>
+<p><a href="https://www.rephrase.ai" rel="nofollow">Rephrase.ai</a></p>
+<p>AI文字到视频生成</p>
+<p><a href="https://synthesys.io" rel="nofollow">Synthesys</a></p>
+<p>AI虚拟人出镜讲解</p>
+<p><a href="https://lumen5.com" rel="nofollow">Lumen5</a></p>
+<p>AI将博客文章转换成视频</p>
+<p><a href="https://dreamfaceapp.com" rel="nofollow">DreamFace</a></p>
+<p>让图片动起来的AI工具</p>
+<p><a href="https://www.rask.ai" rel="nofollow">Rask</a></p>
+<p>AI视频本地化解决方案</p>
+<p><a href="https://colourlab.ai" rel="nofollow">Colourlab.ai</a></p>
+<p>好莱坞也在用的AI视频颜色分级工具</p>
+<p><a href="https://fliki.ai" rel="nofollow">Fliki</a></p>
+<p>AI文字转视频并配音</p>
+<p><a href="https://shipin520.com" rel="nofollow">潮点视频</a></p>
+<p>正版丰富智能的视频、音频素材库</p>
+<p><a href="https://www.steve.ai" rel="nofollow">SteveAI</a></p>
+<p>Animaker旗下AI在线视频制作工具</p>
+<p><a href="https://app.avclabs.com" rel="nofollow">AVCLabs</a></p>
+<p>AI自动移除视频背景</p>
+<p><a href="https://bgrem.deelvin.com/zh/remove_video_bg" rel="nofollow">BgRem</a></p>
+<p>无水印AI视频背景移除</p>
+<p><a href="https://www.movio.la" rel="nofollow">Movio</a></p>
+<p>AI真人出镜视频讲解</p>
+<p><a href="https://www.deepbrain.io" rel="nofollow">DeepBrain</a></p>
+<p>AI口播视频生成工具</p>
+<p><a href="https://www.colossyan.com" rel="nofollow">Colossyan</a></p>
+<p>AI虚拟人出镜视频生成</p>
+<p><a href="https://gencraft.com" rel="nofollow">Gencraft</a></p>
+<p>AI艺术画视频生成工具</p>
+<p><a href="https://wonderdynamics.com" rel="nofollow">Wonder Studio</a></p>
+<p>AI自动为CG角色制作动画、打光并将其合成到真人场景中</p>
+<p><a href="https://pictory.ai" rel="nofollow">Pictory</a></p>
+<p>AI视频制作工具</p>
+<p><a href="https://elai.io" rel="nofollow">Elai.io</a></p>
+<p>AI文本到视频生成工具</p>
+<p><a href="https://www.d-id.com" rel="nofollow">D-ID</a></p>
+<p>AI真人口播视频生成工具</p>
+<p><a href="https://www.veed.io/zh-CN/tools/video-background-remover" rel="nofollow">Veed Video Background Remover</a></p>
+<p>Veed推出的AI视频背景移除工具</p>
+<h2>AI音频工具</h2>
+<p><a href="https://www.ibm.com/cloud/watson-text-to-speech" rel="nofollow">IBM Watson文字转语音</a></p>
+<p>IBM Watson文字转语音</p>
+<p><a href="http://songtell.cn" rel="nofollow">歌词AI鉴赏</a></p>
+<p>用AI的力量理解你最喜欢的歌曲，发现音乐的美妙和感动</p>
+<p><a href="https://typecast.ai" rel="nofollow">Typecast</a></p>
+<p>在线AI文字转语音生成工具</p>
+<p><a href="https://clipchamp.com/zh-hans/features/ai-voice-over-generator" rel="nofollow">Clipchamp AI旁白生成器</a></p>
+<p>Clipchamp的文字转语音生成器</p>
+<p><a href="https://soundraw.io" rel="nofollow">Soundraw</a></p>
+<p>AI音乐生成工具</p>
+<p><a href="https://tianyin.163.com" rel="nofollow">网易天音</a></p>
+<p>网易推出的AI音乐创作平台</p>
+<p><a href="https://peiyin.xunfei.cn" rel="nofollow">讯飞智作</a></p>
+<p>科大讯飞推出的AI转语音和配音工具</p>
+<p><a href="https://boomy.com" rel="nofollow">Boomy</a></p>
+<p>AI音乐生成工具</p>
+<p><a href="https://www.veed.io/tools/text-to-speech-video/ai-voice-generator" rel="nofollow">Veed AI Voice Generator</a></p>
+<p>Veed推出的AI语音生成器</p>
+<p><a href="https://krisp.ai" rel="nofollow">Krisp</a></p>
+<p>AI噪音消除工具</p>
+<p><a href="https://bgmcat.com/home" rel="nofollow">BGM猫</a></p>
+<p>灵动音科技推出的AI智能生成BGM音乐</p>
+<p><a href="https://www.notta.ai/en" rel="nofollow">Notta</a></p>
+<p>AI在线将语音转换成文字</p>
+<p><a href="https://murf.ai" rel="nofollow">Murf AI</a></p>
+<p>AI文本转语音生成工具</p>
+<p><a href="https://mubert.com" rel="nofollow">Mubert</a></p>
+<p>AI BGM背景音乐生成工具</p>
+<p><a href="https://wellsaidlabs.com" rel="nofollow">WellSaid Labs</a></p>
+<p>AI文本转语音工具</p>
+<p><a href="https://www.riffusion.com" rel="nofollow">Riffusion</a></p>
+<p>AI生成不同风格的音乐</p>
+<p><a href="https://www.naturalreaders.com" rel="nofollow">NaturalReader</a></p>
+<p>AI文本转语音工具</p>
+<p><a href="https://themetavoice.xyz" rel="nofollow">MetaVoice</a></p>
+<p>AI实时变声工具</p>
+<p><a href="https://play.ht" rel="nofollow">Play.ht</a></p>
+<p>超真实在线AI语音生成</p>
+<p><a href="https://www.listnr.tech" rel="nofollow">Listnr</a></p>
+<p>AI文本到语音生成器</p>
+<p><a href="https://voicemaker.in" rel="nofollow">Voicemaker</a></p>
+<p>AI文本到语音生成工具</p>
+<p><a href="https://voice.ai" rel="nofollow">Voice.ai</a></p>
+<p>实时AI变声工具</p>
+<p><a href="https://www.assemblyai.com" rel="nofollow">AssemblyAI</a></p>
+<p>转录和理解语音的AI模型</p>
+<p><a href="https://lemonaid.ai" rel="nofollow">Lemonaid</a></p>
+<p>AI音乐生成工具</p>
+<p><a href="https://www.lalal.ai" rel="nofollow">LALAL.AI</a></p>
+<p>AI人声乐器分离和提取</p>
+<p><a href="https://www.voicemod.net/ai-voices" rel="nofollow">Voicemod</a></p>
+<p>AI变声工具</p>
+<p><a href="https://lovo.ai" rel="nofollow">LOVO AI</a></p>
+<p>AI人声和文本转语音生成工具</p>
+<p><a href="https://audo.ai" rel="nofollow">Audo Studio</a></p>
+<p>AI音频清洗工具（噪音消除、声音平衡、音量调节）</p>
+<p><a href="https://fakeyou.com" rel="nofollow">FakeYou</a></p>
+<p>Deep Fake文本转语音</p>
+<p><a href="https://www.resemble.ai" rel="nofollow">Resemble.ai</a></p>
+<p>AI人声生成工具</p>
+<p><a href="https://speechify.com/zh-hans" rel="nofollow">Speechify</a></p>
+<p>超2000万人都在用的文字转语音朗读器</p>
+<p><a href="https://podcast.adobe.com" rel="nofollow">Adobe Podcast</a></p>
+<p>Adobe推出的在线AI音频录制和编辑工具</p>
+<p><a href="https://app.suno.ai" rel="nofollow">Suno</a></p>
+<p>Make a song about anything</p>
+<h2>AI语言翻译</h2>
+<p><a href="https://fanyi.youdao.com/index.html" rel="nofollow">有道翻译</a></p>
+<p>在线即时翻译文本、文档、网页</p>
+<p><a href="https://translate.google.com" rel="nofollow">Google翻译</a></p>
+<p>Google免费提供的上百种语言智能翻译工具</p>
+<p><a href="https://www.bing.com/translator" rel="nofollow">必应翻译</a></p>
+<p>微软必应推出的翻译工具</p>
+<p><a href="https://fanyi.xfyun.cn/console/trans/text" rel="nofollow">讯飞智能翻译</a></p>
+<p>科大讯飞推出的人工智能翻译平台</p>
+<p><a href="https://fanyi.caiyunapp.com" rel="nofollow">彩云小译</a></p>
+<p>兼具中日英同声传译、文档翻译和网页翻译的智能翻译工具</p>
+<p><a href="https://translate.volcengine.com" rel="nofollow">火山翻译</a></p>
+<p>字节跳动推出的智能翻译工具</p>
+<p><a href="https://www.deepl.com/translator" rel="nofollow">DeepL翻译</a></p>
+<p>准确的人工智能翻译工具</p>
+<p><a href="https://fanyi.baidu.com/appdownload/download.html" rel="nofollow">百度AI同传助手</a></p>
+<p>中英文音视频同传字幕工具</p>
+<p><a href="https://fanyi.baidu.com" rel="nofollow">百度翻译</a></p>
+<p>200种语言互译、沟通全世界！</p>
+<p><a href="https://fanyi.sogou.com/text" rel="nofollow">搜狗翻译</a></p>
+<p>你的贴身智能翻译专家</p>
+<p><a href="https://fanyi.qq.com" rel="nofollow">腾讯翻译君</a></p>
+<p>你免费的随身翻译</p></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+</div>
+    <div id="footer">Copyright © <span id="year"></span><a href="https://gornin.github.io"> Gornin </a>
+<p>
+<span id="runday"></span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a>
+</p>
+
+<script>
+if(""!=""){
+    var now=new Date();
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("year").innerHTML=now.getFullYear();
+    if(""!=""){document.getElementById("runday").innerHTML=" • "+"网站运行"+diffDay+"天"+" • ";}
+    else{document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";}
+}
+</script>
+</div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n\n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","gornin/gornin.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+</script>
+
+
+
+</html>
