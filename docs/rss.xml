@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Gornin</title><link>https://gornin.github.io</link><description>写作是生活，整理是习惯，分享是美德</description><copyright>Gornin</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/gornin/ImgStore/main/gornin.jpg</url><title>avatar</title><link>https://gornin.github.io</link></image><lastBuildDate>Wed, 17 Apr 2024 00:28:47 +0000</lastBuildDate><managingEditor>Gornin</managingEditor><ttl>60</ttl><webMaster>Gornin</webMaster><item><title>JavaScript Date函数</title><link>https://gornin.github.io/post/JavaScript%20Date-han-shu.html</link><description>- Date() 函数 -- Date对象的构造函数 &#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Gornin</title><link>https://gornin.github.io</link><description>写作是生活，整理是习惯，分享是美德</description><copyright>Gornin</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://raw.githubusercontent.com/gornin/ImgStore/main/gornin.jpg</url><title>avatar</title><link>https://gornin.github.io</link></image><lastBuildDate>Tue, 28 May 2024 16:21:54 +0000</lastBuildDate><managingEditor>Gornin</managingEditor><ttl>60</ttl><webMaster>Gornin</webMaster><item><title>JavaScript Date函数</title><link>https://gornin.github.io/post/JavaScript%20Date-han-shu.html</link><description>- Date() 函数 -- Date对象的构造函数 &#13;
 - getDate() 函数 -- 返回date对象中的月份中的天数(1-31) &#13;
 - getDay()函数 -- 返回date对象中的星期中的天数(0-6) &#13;
 - getFullYear() 函数 -- 返回date对象中的四位数年份 &#13;
@@ -101,16 +101,16 @@ Stability AI推出的文本到图像生成AI&#13;
 使用GPT-4轻松重构、理解和编写代码。</description><guid isPermaLink="true">https://gornin.github.io/post/AI-dao-hang.html</guid><pubDate>Thu, 04 Apr 2024 02:58:25 +0000</pubDate></item><item><title>Gornin Weekly 3</title><link>https://gornin.github.io/post/Gornin%20Weekly%203.html</link><description>[JavaScript Weekly](https://javascriptweekly.com/issues)&#13;
 &#13;
 [dev hints](https://devhints.io/)&#13;
-&lt;img width="1426" alt="image" src="https://github.com/gornin/gornin.github.io/assets/39228659/0b31aa05-3e4a-4ead-90d7-27600d22ea3a"&gt;&#13;
+&lt;img width='1426' alt='image' src='https://github.com/gornin/gornin.github.io/assets/39228659/0b31aa05-3e4a-4ead-90d7-27600d22ea3a'&gt;&#13;
 &#13;
 [](https://goalkicker.com/)&#13;
 &#13;
 Programming Notes for Professionals books&#13;
 &#13;
-&lt;img width="1113" alt="image" src="https://github.com/gornin/gornin.github.io/assets/39228659/fcc7332a-88b4-4241-a58e-cffbe91ce538"&gt;&#13;
+&lt;img width='1113' alt='image' src='https://github.com/gornin/gornin.github.io/assets/39228659/fcc7332a-88b4-4241-a58e-cffbe91ce538'&gt;&#13;
 &#13;
 [html tags](https://allthetags.com/)&#13;
-&lt;img width="1430" alt="image" src="https://github.com/gornin/gornin.github.io/assets/39228659/d2b25587-4e98-4941-b5e6-6d1a412d2e91"&gt;&#13;
+&lt;img width='1430' alt='image' src='https://github.com/gornin/gornin.github.io/assets/39228659/d2b25587-4e98-4941-b5e6-6d1a412d2e91'&gt;&#13;
 &#13;
 &#13;
 [overapi](https://overapi.com/)&#13;
